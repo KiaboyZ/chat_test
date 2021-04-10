@@ -52,7 +52,6 @@ function add_video_stream(video, stream) {
 }
 
 function connect_new_user(userId, stream) {
-  //send my own stream to other user
   const call = peer.call(userId, stream)
   const video = document.createElement('video')
   call.on('stream', user_video_stream  => {
